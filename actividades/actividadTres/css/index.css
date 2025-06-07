@@ -1,0 +1,64 @@
+body{
+    background: linear-gradient(to right,rgb(150, 179, 193),rgb(37, 207, 37));
+}
+main{
+    margin-top:5%;
+    display:flex;
+    align-items: center;
+}
+input.form-control {
+    background: rgb(144, 150, 135);
+    color: black;
+    border: 0px;
+}
+label.form-label{
+    color: black;
+    font-weight: bold;
+}
+form.g-3 button.btn{
+    width: 150px;
+    margin-left: calc(50% - 75px);
+}
+div.card button.btn{
+    width: 150px;
+    margin-left: calc(50% - 75px);
+}
+form.g-3 div.row{
+    width:80%;
+    margin-left:10%;
+}
+#texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+div.row h1{
+    font-size: 30px;
+}
+#tarjeta{
+    width:30%;
+    margin-left: 35%;
+    margin-top: 3%;
+}
+.ocultar{
+    display: none;
+}
+.ver{
+    display: flex;
+}
+
+@media(max-width:767px){
+
+    #tarjeta{
+        margin-left: 25%;
+        margin-top: 3%;
+        width:50%;
+    }
+
+    form.g-3{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
