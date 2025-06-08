@@ -1,4 +1,5 @@
 var obtenerDatos = () => {
+
   var datos = {
     nombre: document.getElementById("nombre").value,
     nombreDos: document.getElementById("nombreDos").value,
@@ -8,28 +9,46 @@ var obtenerDatos = () => {
     profesion: document.getElementById("profesion").value,
   };
 
+  validacionDatos(datos);
 
-    if(datos.nombre == "" || datos.apellido == "" || datos.anioNac == "" || datos.profesion == ""){
-        alert("Ingresa todos los espacios requeridos.");
-    } else if(!Number.isInteger(datos.anioNac)){
-        alert("Ingresa un número entero para el año de nacimiento.");
-    } else {
-        encendido();
-        reflejarDatos(datos,edadUsuario(datos));
-    }
+};
+
+var validacionDatos = (objeto) => {
+
+  var tarjeta = document.getElementById("tarjeta");
+  
+  if (
+    objeto.nombre == "" ||
+    objeto.apellido == "" ||
+    objeto.anioNac == "" ||
+    objeto.profesion == ""
+  ) {
+    alert("Ingresa todos los espacios requeridos.");
+  } else if (!Number.isInteger(objeto.anioNac)) {
+    alert("Ingresa un año entre 1920 y 2025 para el año de nacimiento, formato números, sin comas o puntos.");
+  } else if (objeto.anioNac <= 1920 || objeto.anioNac > 2025) {
+    alert("Ingresa un año de nacimiento válido.");
+  } else if(tarjeta.classList.contains("ver")){
+    alert("Intenta nuevamente");
+    location.reload();
+  } else{ reflejarDatos(objeto, edadUsuario(objeto)); 
+  };
+
 };
 
 var edadUsuario = (objeto) => {
-    var fecha = new Date();
-    var anioActual = fecha.getFullYear();
-    var edadActual = anioActual - objeto.anioNac;
-    return edadActual;
-}
 
-var reflejarDatos = (objeto,edadActual) => {
-  
+  var fecha = new Date();
+  var anioActual = fecha.getFullYear();
+  var edadActual = anioActual - objeto.anioNac;
+  return edadActual;
+
+};
+
+var reflejarDatos = (objeto, edadActual) => {
+
   if (edadActual < 18) {
-    alert("No puedes generar la carta, debido a que eres menor de edad");
+    alert("No puedes generar la tarjeta ya que eres menor de edad.");
   } else {
     var texto = `Hola, soy ${objeto.profesion} y tengo ${edadActual} años. Esta es mi carta
                  de presentación.`;
@@ -51,22 +70,27 @@ var reflejarDatos = (objeto,edadActual) => {
           break;
 
         case "cardTexto":
-          document.getElementById(
-            "cardTexto"
-        ).innerHTML += texto;
+          document.getElementById("cardTexto").innerHTML += texto;
           break;
       }
     }
+
+    encendido();
   }
+
 };
 
 var encendido = () => {
+
   var claseTarjeta = document.getElementById("tarjeta");
   claseTarjeta.classList.remove("ocultar");
   claseTarjeta.classList.add("ver");
+
 };
 
 var quitar = () => {
+
   var claseTarjeta = document.getElementById("tarjeta");
   location.reload();
+
 };
