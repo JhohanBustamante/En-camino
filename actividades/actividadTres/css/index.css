@@ -19,6 +19,10 @@ form.g-3 button.btn{
     width: 150px;
     margin-left: calc(50% - 75px);
 }
+button.btn:hover{
+    scale: 1.2;
+    opacity: 0.5;
+}
 div.card button.btn{
     width: 150px;
     margin-left: calc(50% - 75px);
