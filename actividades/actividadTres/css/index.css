@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right,rgba(151, 217, 217, 0.471),rgb(37, 207, 37));
+    background: linear-gradient(to right,rgba(125, 192, 158, 0.471),rgb(78, 202, 78));
 }
 main{
     margin-top:1%;
@@ -20,7 +20,7 @@ form.g-3 button.btn{
     margin-left: calc(50% - 75px);
 }
 button.btn:hover{
-    scale: 1.2;
+    scale: 1.1;
     opacity: 0.5;
 }
 div.card button.btn{

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="navegadorHeader" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Lotes RB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Lotes</a></li>
+                                <li><a class="dropdown-item" href="#">Inmuebles</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="publicidadLugares" class="col col-xs-12">
+        <div id="publicidadIndex" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#publicidadIndex" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#publicidadIndex" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#publicidadIndex" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="contenedorImg">
+                        <img src="../../resources/imagenes/lugares/acacias.jpg"
+                            class="rounded float-start d-block w-100" alt="...">
+                        <img src="../../resources/imagenes/lugares/acaciasDos.jpg"
+                            class="rounded float-end d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a href="#">
+                                <h5>Acacías - Meta</h5>
+                            </a>
+                            <p> Sede del Festival del Retorno (realizado cada año en el mes de octubre). Además el
+                                municipio se caracteriza por su biodiversidad, historia y actividades al aire libre.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="contenedorImg">
+
+                        <img src="../../resources/imagenes/lugares/guamal.jpeg" class="d-block w-100" alt="...">
+                        <img src="../../resources/imagenes/lugares/guamalDos.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a href="#">
+                                <h5>Guamal - Meta</h5>
+                            </a>
+                            <p> Distando a 41 km de Villavicencio por el suroeste y a 133 km de Bogotá. Guamal es un
+                                potencial hídrico, lo cual ha hecho
+                                que paulatinamente se esté convirtiendo en un objetivo turístico, siendo uno de los más
+                                visitados en el Departamento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="contenedorImg">
+                        <img src="../../resources/imagenes/lugares/granada.jpg" class="d-block w-100" alt="...">
+                        <img src="../../resources/imagenes/lugares/granadaDos.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <a href="#">
+                                <h5>Granada - Meta</h5>
+                            </a>
+                            <p> Es el segundo municipio más turístico del departamento del Meta después de
+                                Villavicencio. Celebra un festival en el mes de agostos dedicado al hombre del campo que
+                                con su
+                                nobleza y tesón, provee de alimentos agrícolas, a la región y al país entero
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#publicidadIndex" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#publicidadIndex" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-3 principal">
+                    <div class="card mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 principal">
+                    <div class="card text-center mb-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 principal">
+                    <div class="card text-end" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            
+        </div>  
+    </main>
+
+    <footer>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
