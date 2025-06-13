@@ -4,134 +4,156 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, rgb(255, 255, 255), rgb(134, 129, 129));
-  height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 590;
 }
 
 header {
-  width: 100%;
-  margin: 0px;
+  background-color: rgb(68, 219, 126) !important;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
 }
 
-#navegadorHeader {
-  padding: 10px;
-  background-color: rgb(182, 178, 178) !important;
+
+#carruselPrincipal{
+  margin-top: 80px;
 }
 
-
+header nav.navbar {
+  background-color: rgb(68, 219, 126) !important;
+  padding: 0px;
+}
 
 main {
   flex: 1;
-  margin-top: 100px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-}
-
-#publicidadLugares div.carousel-item {
-  height: 310px;
-  opacity: 1;
-}
-
-div.contenedorImg {
-  display: flex;
-  flex-direction: row;
-}
-
-div.carousel-caption {
-  background-color: rgba(178, 190, 190, 0.7);
-}
-
-div.carousel-caption a {
-  color: black !important;
-}
-
-div.carousel-caption p {
-  color: black;
-  font-weight: 400;
-  justify-content: left !important;
-}
-
-div.carousel-caption a h5 {
-  font-weight: 500;
-}
-
-#publicidadLugares div.contenedorImg img {
-  height: 310px;
-  width: 50% !important;
-  opacity: 0.8;
 }
 
 footer {
-  bottom: 0;
-  background: rgb(182, 178, 178);
-  height: 80px;
-  width: 100%;
-  padding-bottom: 0px;
-  margin-top: 100px;
+  background-color: rgb(68, 219, 126);
+}
+nav.navbar button {
+  background: #778575;
+  color: #7580736c;
 }
 
-footer ul{
-    padding-top:10px;
-}
-
-footer a {
-  padding: 15px !important;
-  font-size: 18px !important;
+footer ul a {
   color: black !important;
 }
 
-footer li {
-  padding-left: 2%;
-  padding-right: 2%;
+#segundoFooter li {
+  list-style: none;
 }
 
-div.principal div.card{
+#tercerFooter li {
+  list-style: none;
+}
+
+
+  div.lista {
     width: 300px;
-    margin-left: calc(50% - 150px);
+    margin-top: 50px;
+  }
+
+  div.lista ul.list-group {
+    width: 350px;
+    height: 200px;
+    list-style: none;
+  }
+
+  #primeroFooter div.lista ul.list-group {
+    margin-top: 0px;
+    margin-bottom: -20px;
+    width: 100%;
+  }
+
+  ul.list-group li.elementoListadoFooter {
+    width: 100%;
+  }
+
+  li#tercerFooter {
+    margin-top: 50px;
+    font-weight: 550;
+  }
+
+  li.elementoListadoFooter {
+    padding-left: 20px;
+  }
+
+  #logoDos {
+    width: 80px;
+    height: 80px;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 40px;
+  }
+
+  #logoDosFooter {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: -60px;
+    margin-left: calc(50% - 50px);
+    margin-bottom: 0px;
+  }
+
+  ul#listadoPrincipal {
+    display: flex;
+    list-style: none;
+  }
+
+  footer ul {
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  div.container-fluid a {
+    margin-right: 40px;
+  }
+
+  li#primeroFooter {
+    margin-left: 2%;
+    margin-right: 100px;
+    width: 300px;
+  }
+
+  #segundoFooter {
+    margin-right: 8%;
+    margin-top: 50px;
+  }
+
+  li#tercerFooter {
+    margin-top: 50px;
+    font-weight: 550;
+    margin-bottom: 40px;
+  }
+
+  #logoDos {
+    width: 80px;
+    height: 80px;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 40px;
+  }
+
+#logoDosFooter {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  padding: 0px;
+  margin: 0px;
+  margin-right: -60px;
+  margin-left: calc(50% - 50px);
+  margin-bottom: 30px;
 }
 
+@media(max-width:1169px){
 
-@media (max-width: 576px){
-    #publicidadLugares div.carousel-item {
-    height: 150px;
-  }
-
-  #publicidadLugares div.contenedorImg img {
-    height: 150px;
-  }
-
-  footer{
-    height: 125px;
-  }
-
-}
-
-@media (max-width: 767px) and (min-width:577px) {
-  #publicidadLugares div.carousel-item {
-    height: 220px;
-  }
-
-  #publicidadLugares div.contenedorImg img {
-    height: 220px;
-  }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-  #publicidadLugares div.carousel-item {
-    height: 280px;
-  }
-
-  #publicidadLugares div.contenedorImg img {
-    height: 280px;
-  }
-}
-
-@media (min-width:992px){
-  #navegadorHeader a{
-  padding-left: 50px;
-}
 }

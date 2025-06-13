@@ -8,177 +8,288 @@
     <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/principal.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav id="navegadorHeader" class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Lotes RB</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <img id="logoDos" src="../../resources/logos/logoDoos.png">
+                <a class="navbar-brand" href="#">Venta de lotes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item botonDesplegable">
+                            <a class="nav-link active" aria-current="page" href="./index.html"> Inicio </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contáctanos</a>
+                            <a class="nav-link" href="./idividuales.html"> Lugares </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lotes</a></li>
-                                <li><a class="dropdown-item" href="#">Inmuebles</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactanos.html"> Contáctanos </a>
                         </li>
                     </ul>
-        
                 </div>
             </div>
         </nav>
     </header>
 
-    <div id="publicidadLugares" class="col col-xs-12">
-        <div id="publicidadIndex" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#publicidadIndex" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#publicidadIndex" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#publicidadIndex" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <div id="carruselPrincipal" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="../../resources/imagenes/lugares/ciudad.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="contenedorImg">
-                        <img src="../../resources/imagenes/lugares/acacias.jpg"
-                            class="rounded float-start d-block w-100" alt="...">
-                        <img src="../../resources/imagenes/lugares/acaciasDos.jpg"
-                            class="rounded float-end d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="#">
-                                <h5>Acacías - Meta</h5>
-                            </a>
-                            <p> Sede del Festival del Retorno (realizado cada año en el mes de octubre). Además el
-                                municipio se caracteriza por su biodiversidad, historia y actividades al aire libre.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="contenedorImg">
-
-                        <img src="../../resources/imagenes/lugares/guamal.jpeg" class="d-block w-100" alt="...">
-                        <img src="../../resources/imagenes/lugares/guamalDos.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="#">
-                                <h5>Guamal - Meta</h5>
-                            </a>
-                            <p> Distando a 41 km de Villavicencio por el suroeste y a 133 km de Bogotá. Guamal es un
-                                potencial hídrico, lo cual ha hecho
-                                que paulatinamente se esté convirtiendo en un objetivo turístico, siendo uno de los más
-                                visitados en el Departamento.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="contenedorImg">
-                        <img src="../../resources/imagenes/lugares/granada.jpg" class="d-block w-100" alt="...">
-                        <img src="../../resources/imagenes/lugares/granadaDos.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="#">
-                                <h5>Granada - Meta</h5>
-                            </a>
-                            <p> Es el segundo municipio más turístico del departamento del Meta después de
-                                Villavicencio. Celebra un festival en el mes de agostos dedicado al hombre del campo que
-                                con su
-                                nobleza y tesón, provee de alimentos agrícolas, a la región y al país entero
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item active">
+                <img src="../../resources/imagenes/lugares/ciudadDos.jpeg" class="d-block w-100" alt="...">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#publicidadIndex" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#publicidadIndex" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <img src="../../resources/imagenes/lugares/ciudadTres.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../resources/imagenes/lugares/ciudadCuatro.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <main>
         <div class="container">
-
             <div class="row">
-                <div class="col-3 principal">
-                    <div class="card mb-3" style="width: 18rem;">
+                   <h4> Nuestro propósito </h4> 
+                    <p><br>
+                        Nuestro objetivo es conectar a compradores, vendedores e inversionistas con oportunidades reales en el mercado 
+                        de predios, brindando una plataforma integral que facilite la compra, venta y permuta de lotes de forma sencilla, 
+                        rápida y segura. En Venta de Lotes RB creemos en la transparencia, el acompañamiento personalizado y la tecnología 
+                        como herramientas clave para transformar el proceso inmobiliario en una experiencia accesible, confiable y eficiente 
+                        para todos. Ya sea que busques invertir, construir o intercambiar tu propiedad, aquí encontrarás el respaldo y las 
+                        herramientas necesarias para tomar decisiones con total confianza.
+                    </p>
+            </div> 
+            <div class="row">
+                <center><h3 id="tituloLugares">¿Dónde estamos?</h3></center>
+                <div class="col-12 col-md-6 col-lg-4 cartas">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../resources/imagenes/lugares/loteUnoPrimero.jpeg" class="img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5>Acacías</h5>
+                            <p class="card-text">Vive rodeado de naturaleza. Lotes campestres con excelente ubicación,
+                                acceso pavimentado y servicios disponibles.</p><a href="./lugarUno.html" target="_blank">Conocer</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 principal">
-                    <div class="card text-center mb-3" style="width: 18rem;">
+                <div class="col-12 col-md-6 col-lg-4 cartas">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../resources/imagenes/lugares/loteDosPrimero.jpeg" class="img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5>Guamal</h5>
+                            <p class="card-text">Invierte en tu futuro con estos exclusivos lotes rurales. Espacios
+                                ideales
+                                para construir la casa de tus sueños.</p><a href="./lugarDos.html" target="_blank">Conocer</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 principal">
-                    <div class="card text-end" style="width: 18rem;">
+                <div class="col-12 col-md-6 col-lg-4 cartas">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../resources/imagenes/lugares/loteTresPrimero.jpeg" class="img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            <h5>Granada</h5>
+                            <p class="card-text">Aprovecha esta oportunidad única. Lotes en zona de alta valorización,
+                                listos para
+                                entrega inmediata.</p><a href="./lugarTres.html" target="_blank">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+
+                    <div id="cartaTest" class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Dónde quieres vivir?</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Test de entorno ideal.</h6>
+                            <p class="card-text">Hemos realizado un pequeño <br> test para recomendarte los mejores lugares.
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="./test.html" class="card-link">Test</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-8">
+                    <form>
+                        <h5>¿Estás interesado en algún lugar?</h5>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Tu nombre</label>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Teléfono</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Comentarios</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <fieldset class="row mb-3">
+                            <legend class="col-form-label col-sm-2 pt-0">Interés</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        value="opcionUno" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Correo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="opcionDos">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Whatsapp
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item botonDesplegable">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Ventajas
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Adquiere tu lote fácil y seguro desde nuestra página. Explora opciones con fotos reales,
+                                compara precios, consulta disponibilidad en tiempo real y accede a beneficios exclusivos
+                                como descuentos por compra en línea y asesoría personalizada. Nuestra plataforma está
+                                diseñada
+                                para ofrecerte confianza, claridad y rapidez en todo el proceso de compra, sin salir de
+                                casa.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item botonDesplegable">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Opciones de pago
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Contamos con múltiples medios de pago para tu comodidad: <strong> tarjetas débito y
+                                    crédito, transferencias,
+                                    pagos en efectivo y opciones de financiamiento </strong>. Todos los procesos son
+                                seguros, rápidos y respaldados
+                                por plataformas confiables. Además, al pagar desde nuestra página, puedes acceder a
+                                promociones especiales
+                                y confirmar tu compra al instante.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item botonDesplegable">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Proyecciones
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Nuestros lotes se encuentran en una zona de alta valorización, ideal para inversión a
+                                mediano y largo plazo.
+                                Con el crecimiento urbano proyectado y nuevas vías de acceso en desarrollo, se espera un
+                                aumento sostenido en el
+                                valor del suelo. Comprar ahora representa una oportunidad estratégica para asegurar
+                                rentabilidad y plusvalía en el
+                                futuro.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="row">
             
-        </div>  
+        </div>
     </main>
 
     <footer>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
+        <div class="row">
+            <ul id="listadoPrincipal">
+                <li id="primeroFooter">
+                    <div class="col-6 col-md-6 lista">
+                        <img id="logoDosFooter" src="../../resources/logos/logoDoos.png">
+                        <ul class="list-group list-group-flush">
+                            <li class="elementoListadoFooter">
+                                Venta de Lotes RB es una plataforma digital creada para
+                                simplificar la compra de predios. <br> 
+                                Ofrecemos una experiencia segura, confiable y
+                                accesible, permitiendo a los usuarios explorar opciones y gestionar todo el proceso 
+                                desde un solo lugar.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+    
+                <li id="segundoFooter">
+                    <div class="col-6 col-md-6 lista">
+                        <ul class="list-group list-group-flush">
+                            <li class="elementoListadoFooterCabeza"> <h5> Medios de contacto: </h5> </li>
+                            <li class="elementoListadoFooter"> <br>Teléfono: +57 320 202 02 02</li>
+                            <li class="elementoListadoFooter"><br>Correo : lotesRB@gmail.com</li>
+                            <li class="elementoListadoFooter"><a href="https://wa.me/3202020202"
+                                    target="_blank"><br>Whatsapp</a>
+                                y
+                                <a href="https://discord.com/channels/1369696453437558856/1369703101119856822"
+                                    target="_blank">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+    
+                <li id="tercerFooter">
+                    <div class="col-6 col-md-6 lista">
+                        <ul class="list-group list-group-flush">
+                            <li class="elementoListadoFooterCabeza"> <h5>Secciones principales:</h5>
+                            </li>
+                            <li class="elementoListadoFooter">
+                                <a href="./index.html"><br>Inicio</a>
+                            </li>
+                            <li class="elementoListadoFooter">
+                                <a href="./permutar.html"><br>Permutar</a>
+                            </li>
+                            <li class="elementoListadoFooter">
+                                <a href="./contactanos.html"><br>Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </footer>
-
     <script src="../../resources/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
